@@ -1,7 +1,14 @@
 using System;
 
+class Greeter {
+    public void SayHello() {
+        Console.WriteLine("Привет, мир!");
+    }
+}
+
 class Program {
     static void Main() {
-        Console.WriteLine("Hello, World!");
+        Greeter greeter = new Greeter();
+        greeter.SayHello();
     }
 }
